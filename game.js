@@ -15,7 +15,7 @@ function displayGuess(){
 
 function lower(){
     max = compGuess - 1;
-    document.getElementById("log").innerHTML += ("IF lower THEN set new max value to old guess. New Max: " + max + "<br>");
+    document.getElementById("log").innerHTML += ("IF lower THEN set new max value to old guess-1. New Max: " + max + "<br>");
     document.getElementById("Max").innerHTML = max;
     attempts++;
     displayGuess();
@@ -23,7 +23,7 @@ function lower(){
 
 function higher(){
     min = compGuess + 1;
-    document.getElementById("log").innerHTML += ("IF higher THEN set new min value to old guess. New Min: " + min + "<br>");
+    document.getElementById("log").innerHTML += ("IF higher THEN set new min value to old guess+1. New Min: " + min + "<br>");
     document.getElementById("Min").innerHTML = min;
     attempts++;
     displayGuess();
